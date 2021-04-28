@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>STUDENT REGISTRATION</title>
+<style type="text/css">
+body{
+background-image:url("school3.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+h1{
+   height:80px;
+   font-size:46;
+   color:#FFFF;
+   text-align:center;
+   line-height:80px;
+   }
+.bb{
+    width:500px;
+    height:550px;
+    background-color:rgb(0,0,0,0.6);
+    margin:0 auto;
+    
+margin-top:10px;
+    padding-top:10px;
+    padding-left:100px;
+    }
+.btn{
+     font-family:arial;
+     text-transform: uppercase;
+     font-size:16px;
+     width:150px;
+     height:45px;
+     border-radius:50px;
+     line-height:40px;
+     text-align:40px;
+     border:3px solid#009688;
+     text-decoration:none;
+     color:#FFFFFF;
+     position:relative;
+     background:transparent;
+     transition: .3s;
+     }
+.btn:hover{
+     background-color:#009688;
+     }
+.alert{
+    font-color:red;
+}
+</style>
+</head>
+<body>
+<div>
+<a href="home.html"></a>
+
+<form action="studentregister.php" method="post" onsubmit="return validation()">
+<h1 style=background-color:#2196F3><b><center><font color="white">STUDENT DETAILS</style></center></h1>
+<div class="bb">
+<font face="Gill Sans MT"><table cellspacing="10" cellpadding="10">
+<tr>
+<td><b><font color="#FFFFFF">NAME</font></b></td><td><input type="text" id="name" name="name" required></td>
+</tr>
+<tr>
+<td><b><font color="#FFFFFF">STANDARD</font></b></td><td><input type="number" id="std" name="std" required></td>
+</tr>
+<tr>
+<td><b><font color="#FFFFFF">DEPARTMENT NUMBER</font></b></td><td><input type="text" id="dept_no" name="dept_no" required></td>
+</tr>
+<tr>
+<td><b><font color="#FFFFFF">CONTACT NUMBER</font></b></td><td><input type="number" id="contact" name="contact" required></td>
+</tr>
+
+<tr>
+<td><b><font color="#FFFFFF">GENDER</td>  <td> <select name="gender" width="30" height="10" required="required">
+<option></option>
+<option value="MALE">MALE</option>
+<option value="FEMALE">FEMALE</option>
+<option value="TRANSGENDER">TRANSGENDER</option>
+</select></td></tr>
+<tr>
+<td><b><font color="#FFFFFF">BLOOD GROUP</font></b></td><td><input type="text" id="blood_group" name="blood_group" required/></td></B>
+</tr>
+<tr>
+<td><b><font color="#FFFFFF">ADDRESS</font></b></td><td><input type="text" id="address" name="address" required></td>
+</tr>
+
+<tr>
+<td><input type="reset" class="btn" name="RESET"></td>
+<td><input type="submit" class="btn" value="SUBMIT"></td>
+</tr>
+</table>
+
+</body>
+</html>
